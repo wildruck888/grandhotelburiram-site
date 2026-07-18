@@ -723,3 +723,54 @@ p:empty { display: none; }
 /* final polish */
 .sixth-container .motif-image { display: none; }   /* overlapped group-travel text */
 .blue-slide { position: absolute; inset: 0; background: rgba(61, 35, 51, 0.5); }  /* readable hero titles */
+
+/* ============================================================
+   Coverage pass: remaining template families
+   ============================================================ */
+
+/* FAQ / contact info rows: small-caps label + content */
+.title-left { font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.1em;
+  font-size: 15px; color: var(--plum); margin: 26px 0 6px; }
+.content-left { font-size: 15.5px; line-height: 1.9; margin-bottom: 8px; }
+
+/* journey-family pages (our-journey, cheers, group-travel) */
+.jrn-second-container { padding: 78px 32px 26px; }
+.jrn-second-wrapper { max-width: 860px; margin: 0 auto; text-align: center; }
+.jrn-second-wrapper h1 { font-size: 27px; color: var(--plum); margin-bottom: 18px; }
+.jrn-third-container { max-width: 1150px; margin: 0 auto 40px; padding: 0 32px; display: flex; gap: 56px; align-items: center; }
+.journey-left, .journey-right { flex: 1; min-width: 0; }
+.jrn-third-container img { width: 100%; height: 340px; object-fit: cover; }
+.jrn-third-container h1, .jrn-third-container h2 { font-size: 24px; color: var(--plum); margin: 10px 0 16px; }
+.jrn-third-container p { font-size: 15.5px; line-height: 1.9; }
+.jrn-option-container { display: flex; }
+.jrn-option-link-left, .jrn-option-link-right { position: relative; flex: 1; min-height: 360px; overflow: hidden;
+  background: url('/assets/img/fallback-street.jpg') center/cover; }
+.jrn-option-link-left > img, .jrn-option-link-right > img {
+  position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+
+/* blog / news archive pages */
+.new-second-container { padding: 70px 0 60px; }
+.new-second-wrapper { max-width: 1220px; margin: 0 auto; padding: 0 32px; }
+.second-flex-wrapper { display: flex; gap: 40px; flex-wrap: wrap; }
+.second-flex-wrapper > * { min-width: 0; }
+.search-container { margin: 18px 0 30px; }
+.search-container input[type="search"], .search-container input[type="text"] {
+  width: 100%; max-width: 420px; padding: 12px 14px; border: 1px solid #cfd8df; font-family: var(--font-body); }
+.instagram-news-container { text-align: center; padding: 60px 24px; }
+
+/* policy / default text pages: readable measure */
+.dft-second-container, .blk-second-wrapper { max-width: 880px; margin: 0 auto; padding: 70px 32px; }
+.dft-second-container h1, .blk-second-wrapper h1 { font-size: 26px; color: var(--plum); margin-bottom: 18px; }
+.dft-second-container p, .blk-second-wrapper p { font-size: 15px; line-height: 1.9; margin-bottom: 14px; }
+
+/* attraction venue info + map sections */
+.second-venue-container { max-width: 1150px; margin: 0 auto; padding: 60px 32px 30px; }
+.google-venue-container { max-width: 1150px; margin: 0 auto 60px; padding: 0 32px; }
+.google-venue-container iframe { width: 100%; min-height: 380px; border: 0; }
+
+@media (max-width: 900px) {
+  .jrn-third-container, .jrn-option-container { flex-direction: column; }
+}
+
+/* archive cards share the row: three-up, wrap on small screens */
+.second-flex-wrapper > * { flex: 1 1 300px; }
