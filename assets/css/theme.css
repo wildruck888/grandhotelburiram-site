@@ -673,3 +673,53 @@ html { overflow-x: hidden; width: 100%; }
 .option-wrapper-top .option-holder { flex: 0 0 170px; min-width: 0; }
 .option-wrapper-top h1 { flex: 1.2; min-width: 0; font-size: 24px; }
 .option-wrapper-top p { flex: 1; min-width: 0; font-size: 15.5px; line-height: 1.9; }
+
+/* ============================================================
+   fac-* template (amenities / things-to-do landings) — proper containers
+   ============================================================ */
+.hero-header { font-size: 46px; color: var(--white); }
+.hero-sub { font-family: var(--font-serif); font-style: italic; font-size: 18px; margin-top: 10px; color: var(--white); }
+
+.fac-second-container { padding: 78px 32px 26px; }
+.fac-second-wrapper { max-width: 860px; margin: 0 auto; text-align: center; }
+.fac-second-wrapper h1 { font-size: 27px; color: var(--plum); margin-bottom: 20px; }
+.fac-second-wrapper p { font-size: 16px; line-height: 1.9; }
+
+.fac-third-container-main { padding: 24px 0 50px; }
+.fac-third-container { max-width: 1150px; margin: 0 auto 34px; padding: 0 32px; }
+.fac-third-flex { display: flex; gap: 56px; align-items: center; }
+.fac-third-flex > div { flex: 1; min-width: 0; }
+.fac-third-flex img { width: 100%; height: 340px; object-fit: cover; }
+.fac-third-flex h1, .fac-third-flex h2 { font-size: 24px; color: var(--plum); margin: 10px 0 16px; }
+.fac-third-flex p { font-size: 15.5px; line-height: 1.9; }
+.fac-left-right-link a { font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.12em;
+  font-size: 13.5px; color: var(--plum); border-bottom: 2px solid var(--plum); padding-bottom: 3px; }
+
+.fac-option-container { max-width: 1150px; margin: 0 auto; padding: 6px 32px 44px; }
+
+@media (max-width: 900px) {
+  .fac-third-flex { flex-direction: column; gap: 24px; }
+  .fac-third-flex img { height: 240px; }
+  .hero-header { font-size: 30px; }
+}
+
+/* BE-PART row: divider becomes a slim vertical accent, columns balance */
+.option-wrapper-top > .container-divide { flex: 0 0 4px; width: 4px; height: 60px; margin: 4px 0 0; background: var(--plum); }
+.option-wrapper-top > h1 { flex: 1.25; }
+.option-wrapper-top > p { flex: 1; margin: 0; }
+.option-wrapper-top > p p { margin: 0; }
+
+/* deterministic layout for the statement row: label | statement | bar | paragraph */
+.option-wrapper-top { display: grid; grid-template-columns: 170px 1.2fr 4px 1fr; gap: 40px; align-items: start; }
+.option-wrapper-top > * { min-width: 0; }
+@media (max-width: 900px) {
+  .option-wrapper-top { grid-template-columns: 1fr; gap: 18px; }
+  .option-wrapper-top > .container-divide { width: 56px; height: 4px; }
+}
+
+/* stray empties never occupy layout cells */
+p:empty { display: none; }
+
+/* final polish */
+.sixth-container .motif-image { display: none; }   /* overlapped group-travel text */
+.blue-slide { position: absolute; inset: 0; background: rgba(61, 35, 51, 0.5); }  /* readable hero titles */
