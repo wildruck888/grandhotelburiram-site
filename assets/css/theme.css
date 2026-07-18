@@ -540,3 +540,84 @@ a[title="THAI"] { display: none !important; }
 
 /* AOS pre-animation transforms (fade-left/right) must never widen the page */
 html { overflow-x: hidden; width: 100%; }
+
+/* ============================================================
+   Corrective pass: homepage sections restyled to the REAL markup
+   ============================================================ */
+
+/* junk placeholder icons (stamp/plane) — hide until real art exists */
+.stamp-container, .passport-container { display: none; }
+
+/* "Centrally located" (fifth-wrapper-top) is a centered text block, NOT a flex row */
+.fifth-wrapper-top { display: block; max-width: 760px; margin: 0 auto; text-align: center; }
+.fifth-wrapper-top h1 { font-size: 30px; color: var(--plum); margin: 18px 0 26px; }
+.fifth-wrapper-top p { font-size: 16px; line-height: 2; margin: 0 0 6px; }
+.centre-holder .centre-header { font-size: 17px; letter-spacing: 0.18em; color: var(--plum); }
+.centre-holder .centre-divide { margin-bottom: 18px; }
+
+/* image-link cards: img + tint + caption block are SIBLINGS inside the card */
+.fifth-wrapper-bottom { display: flex; gap: 44px; max-width: 1220px; margin: 44px auto 0; padding: 0 32px; }
+.image-link-left, .image-link-right { position: relative; flex: 1; overflow: hidden; min-height: 380px; }
+.image-link-left > img, .image-link-right > img {
+  position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.image-link-left:hover > img, .image-link-right:hover > img { transform: scale(1.04); }
+.image-link-left .slide-three, .image-link-right .slide-four { position: absolute; inset: 0; }
+.image-link-wrapper { position: absolute; inset: 0; z-index: 5; }
+.image-link-wrapper::after { content: none; }
+.image-link-wrapper img { position: static; width: 90px; height: auto; }
+.image-link-wrapper .outer { display: table; width: 100%; height: 100%; }
+.image-link-wrapper .middle { display: table-cell; vertical-align: middle; }
+.image-link-wrapper .inner { text-align: center; color: var(--white); }
+.image-link-header { font-size: 28px; color: var(--white); }
+.image-link-link a { color: var(--white); border-bottom: 2px solid var(--white); padding-bottom: 3px;
+  font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.14em; font-size: 14px; }
+
+/* ROOMS row: third-right is a parallax photo panel */
+.third-flex { align-items: stretch; }
+.third-right { font-family: inherit; font-style: normal;
+  background-size: cover; background-position: center; min-height: 480px; flex: 1.1; }
+
+/* GROUP TRAVEL (sixth): text left, photo panel right, link under text */
+.sixth-container { background: var(--cream); padding: 90px 0; overflow-x: clip; }
+.sixth-wrapper { max-width: 1150px; margin: 0 auto; padding: 0 32px; position: relative; }
+.sixth-flex { display: flex; gap: 56px; align-items: stretch; }
+.sixth-left { flex: 1; min-width: 0; text-align: left; }
+.sixth-left .header { font-size: 30px; color: var(--plum); text-align: left; }
+.sixth-left p { font-size: 16px; line-height: 1.9; text-align: left; }
+.sixth-right { flex: 1.1; min-height: 420px; background-size: cover; background-position: center; display: block; }
+.sixth-link { margin: 26px auto 0; max-width: 1150px; padding: 0 32px; text-align: left; }
+.sixth-link a { display: inline-block; font-family: var(--font-display); text-transform: uppercase;
+  letter-spacing: 0.14em; font-size: 14px; color: var(--plum); border-bottom: 2px solid var(--plum); padding-bottom: 3px; }
+.sixth-left-border { display: none; }
+
+/* motif stays a small decorative corner, never a content block */
+.sixth-container .motif-image { position: absolute; left: 0; bottom: -60px; opacity: 0.6; }
+
+@media (max-width: 900px) {
+  .fifth-wrapper-bottom { flex-direction: column; }
+  .third-right, .sixth-right { min-height: 300px; }
+}
+
+/* footer-thin is a small divider bar inside the footer address — undo variant styling */
+.footer-container .footer-thin, .footer-address .footer-thin {
+  background: rgba(248,244,234,0.3); width: 56px; height: 3px;
+  padding: 0; margin: 14px 0; display: block;
+}
+.footer-address h2, .footer-address h3 { font-size: 14px; line-height: 1.8; font-weight: 400; }
+.footer-address h2 { font-family: var(--font-display); text-transform: uppercase; font-size: 16px; letter-spacing: 0.1em; }
+.social-wrapper { display: flex; gap: 14px; margin-top: 16px; }
+.social-footer a { color: var(--cream); font-size: 20px; }
+
+/* anchor the decorative motif to its own section, not the document */
+.sixth-container { position: relative; }
+.motif-image { position: absolute; left: 0; bottom: 0; opacity: 0.5; max-width: 90px; overflow: hidden; pointer-events: none; }
+.motif-image img { width: 90px; }
+
+/* copyright band: solid, compact */
+.bottom-container { background: var(--plum-dark); opacity: 1; margin: 0; padding: 0 40px; max-width: none; border: 0; }
+.bottom-wrapper { max-width: 1220px; margin: 0 auto; display: flex; justify-content: space-between;
+  align-items: center; padding: 18px 0; border-top: 0; opacity: 1; }
+.bottom-copy, .bottom-links, .bottom-links a { font-size: 12px; letter-spacing: 0.06em; color: rgba(248,244,234,0.75); }
+.bottom-links a:hover { color: var(--cream); }
