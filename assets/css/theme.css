@@ -838,3 +838,6 @@ p:empty { display: none; }
 
 /* empty gallery placeholders never reserve space */
 .magnific-img:empty { display: none; }
+
+/* WP content images carry fixed width/height attributes — keep aspect on small screens */
+p > img[height], .main img[height] { height: auto; }
