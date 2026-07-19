@@ -1,5 +1,6 @@
 $(document).ready(function(){
-	$(".bookbutton a").click(function(){
+	$(".bookbutton a").click(function(e){
+		e.preventDefault();  /* href is a crawlable Agoda fallback; JS opens the modal */
 		$(".bookoverlay").fadeToggle(200);
 		$(".top-navigation").css("z-index", 0);
 		$(this).toggleClass('bookbtn-open').toggleClass('bookbtn-close');

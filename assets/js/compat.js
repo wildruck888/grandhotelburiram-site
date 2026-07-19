@@ -1,7 +1,8 @@
 /* Reimplementation of the lost menu.js / navigation.js behaviors */
 $(document).ready(function () {
   // MENU tab toggles the full-screen nav overlay (mirrors booking.js pattern)
-  $(".button a").click(function () {
+  $(".button a").click(function (e) {
+    e.preventDefault();  // href is a crawlable fallback; JS drives the overlay
     $(".overlay").fadeToggle(200);
     $("#navigation-wrapper").css("z-index", 9999);
     $("#booking-wrapper").css("z-index", 800);
