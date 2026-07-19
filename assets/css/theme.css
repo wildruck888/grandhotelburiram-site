@@ -774,3 +774,47 @@ p:empty { display: none; }
 
 /* archive cards share the row: three-up, wrap on small screens */
 .second-flex-wrapper > * { flex: 1 1 300px; }
+
+/* ============================================================
+   Standards pass: slider grids, archive polish, IG follow, gaps
+   ============================================================ */
+
+/* lost slider.js: render slider items as a tidy photo grid */
+.jrn-third-container .wrap, .fac-third-container .wrap { flex: 1 1 100%; width: 100%; }
+.slider { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.slider .item img { width: 100%; height: 250px; object-fit: cover; display: block; }
+
+/* rows whose image column was never archived: let text own the row */
+.fac-third-flex > div:empty, .jrn-third-container > div:empty { display: none; }
+
+/* archive cards */
+.second-flex-wrapper { gap: 40px; }
+.second-flex-wrapper > div > img { width: 100%; height: 225px; object-fit: cover; margin-bottom: 16px; }
+.second-flex-wrapper h2 { font-size: 22px; }
+.second-flex-wrapper h2 a { color: var(--plum); }
+.second-flex-wrapper h4 { font-family: var(--font-body); font-weight: 600; font-size: 13px;
+  color: #8a7a80; letter-spacing: 0.08em; margin: 6px 0 10px; }
+.second-flex-wrapper p { font-size: 15px; line-height: 1.8; }
+.second-flex-wrapper > div > a { font-family: var(--font-display); text-transform: uppercase;
+  letter-spacing: 0.12em; font-size: 13px; color: var(--plum); }
+
+/* search form */
+.search-container form { display: flex; gap: 10px; max-width: 560px; }
+.search-container input[type="search"] { flex: 1; max-width: none; }
+#searchsubmit, .search-container input[type="submit"] {
+  background: var(--plum); color: var(--white); border: 0; padding: 12px 26px; cursor: pointer;
+  font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.12em; font-size: 13px; }
+#searchsubmit:hover { background: var(--plum-dark); }
+
+/* Instagram section: compact, with a real follow action */
+.instagram-container, .instagram-news-container { padding: 56px 24px 64px; }
+.ig-follow { display: inline-block; margin-top: 6px; font-family: var(--font-display);
+  text-transform: uppercase; letter-spacing: 0.14em; font-size: 14px; color: var(--plum);
+  border: 2px solid var(--plum); padding: 12px 28px; transition: all 0.2s ease; }
+.ig-follow:hover { background: var(--plum); color: var(--white); }
+.ig-follow .fa { margin-left: 8px; }
+
+/* tighter section rhythm */
+.second-container { padding: 70px 24px 46px; }
+.third-container { padding: 20px 0 70px; }
+.typ-second-container { padding: 64px 0 30px; }
