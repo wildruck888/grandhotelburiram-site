@@ -37,7 +37,8 @@ main { display: block; }
 
 /* comfortable tap targets on touch layouts */
 @media (max-width: 767px) {
-  .top-navigation a, .footer-container a, .new-footer a, .herolink {
+  .top-navigation a, .footer-container a, .new-footer a, .herolink,
+  .bottom-links a, .bottom-copy a {
     display: inline-block; padding: 8px 6px; margin: 2px 0;
   }
 }
