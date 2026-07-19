@@ -22,7 +22,7 @@ $(document).ready(function () {
     var name = $(this).find('[name*="name"], [name="your-name"]').first().val() || "";
     var msg = $(this).find("textarea").first().val() || "";
     var subj = $(this).find('[name*="subject"]').first().val() || "Website enquiry";
-    location.href = "mailto:rsvn@grandhotelburiram.com?subject=" +
+    location.href = "mailto:rsvn@grandburiram.com?subject=" +
       encodeURIComponent(subj) + "&body=" + encodeURIComponent(msg + "\n\n— " + name);
   });
 });
