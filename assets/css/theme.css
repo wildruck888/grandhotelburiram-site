@@ -753,6 +753,13 @@ p:empty { display: none; }
 /* blog / news archive pages */
 .new-second-container { padding: 70px 0 60px; }
 .new-second-wrapper { max-width: 1220px; margin: 0 auto; padding: 0 32px; }
+
+/* article body rhythm (real posts, 2026) */
+.new-content h1 { margin: 26px 0 18px; line-height: 1.25; }
+.new-content h3 { margin: 30px 0 10px; letter-spacing: 1px; color: var(--plum); }
+.new-content p { margin: 0 0 16px; line-height: 1.75; }
+.new-content a { color: var(--plum); text-decoration: underline; text-underline-offset: 3px; }
+.new-content a:hover { color: var(--slate); }
 .second-flex-wrapper { display: flex; gap: 40px; flex-wrap: wrap; }
 .second-flex-wrapper > * { min-width: 0; }
 .search-container { margin: 18px 0 30px; }
