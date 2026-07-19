@@ -7,12 +7,14 @@
 
 /* ---------- tokens ---------- */
 :root {
-  --plum: #46283a;          /* headings, footer, book tab */
-  --plum-dark: #3a2130;
+  /* brand tokens pixel-verified 2026-07-20 vs docx screenshots + walkthrough
+     video stills (tab colors constant across varied backgrounds = solid fills) */
+  --plum: #4d374c;          /* headings, footer, book tab */
+  --plum-dark: #402d3f;
   --ink: #3d2b2e;           /* body text on light */
-  --cream: #f8f4ea;         /* menu overlay + section bg */
+  --cream: #f4ebdc;         /* menu overlay + section bg */
   --beige: #efe9da;
-  --slate: #7f96ab;         /* menu tab + accents */
+  --slate: #81a0bf;         /* menu tab + accents */
   --slate-light: #dce6ef;   /* card panel bg */
   --white: #ffffff;
   --font-display: 'Oswald', 'Arial Narrow', sans-serif;

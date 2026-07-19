@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://grandburiram.com/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://grandburiram.com/2020/06/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://grandburiram.com/amenities-facilities/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://grandburiram.com/category/blog/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://grandburiram.com/category/promotions/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://grandburiram.com/category/uncategorized/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://grandburiram.com/cheers-to-the-environment/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://grandburiram.com/contact-us/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://grandburiram.com/cookies/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
@@ -25,9 +21,6 @@
   <url><loc>https://grandburiram.com/rooms/family-room/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://grandburiram.com/rooms/grand-deluxe-room/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://grandburiram.com/rooms/standard-room/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://grandburiram.com/tag/accommodation/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://grandburiram.com/tag/food-beverage/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://grandburiram.com/tag/sports-city/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://grandburiram.com/things-to-do/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://grandburiram.com/things-to-do/buriram-castle/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://grandburiram.com/things-to-do/khao-kradong-forest-park/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
